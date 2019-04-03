@@ -1,0 +1,127 @@
+@import "src/app/sass/breakpoints.scss";
+@import "src/app/sass/mixins.scss";
+
+.page-container {
+  height: 100%;
+
+  /*because material2 applies padding on 600px to mat-card*/
+  mat-card {
+    padding: 24px !important;
+  }
+}
+
+/*form*/
+.form-logo {
+  $logo-width: 100px;
+  $logo-height: 100px;
+  width: $logo-width;
+  height: $logo-height;
+  img {
+    @include center("area");
+    width: $logo-width - 3px;
+    height: $logo-height - 3px;
+  }
+  border-radius: 50%;
+  margin: -100px auto $l !important;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.form-body {
+  position: relative;
+  @include center("area");
+  h1 {
+    text-align: center;
+  }
+  background: #424242;
+}
+
+.have-account {
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (max-width: $small) {
+  .spacer {
+    all: unset;
+  }
+  .form-logo {
+    display: none;
+  }
+  .form-body {
+    position: relative !important;
+    transform: none !important;
+    top: 0 !important;
+    left: 0 !important;
+    flex: 0 1 auto;
+    height: 100%;
+    background-color: #424242f4;
+  }
+  .page-container {
+    overflow: hidden;
+    height: 100%;
+
+    mat-card {
+      margin: unset;
+      border-radius: 0;
+      @media (max-height: 760px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+form {
+  width: 100%;
+  margin-top: $l;
+  font-size: 16px;
+  mat-form-field {
+    width: 100%;
+  }
+}
+
+.login-button-group {
+  margin: $xl auto;
+}
+
+.divider {
+  display: grid;
+  grid-template-columns: 45% 10% 45%;
+  margin: $l auto;
+  align-items: center;
+  text-align: center;
+  mat-divider {
+    position: relative;
+  }
+}
+
+@media (max-height: 760px) {
+  .page-container {
+    display: flex;
+  }
+  .form-body {
+    position: relative !important;
+    transform: none !important;
+    top: 0 !important;
+    left: 0 !important;
+    flex: 0 1 auto;
+    height: 100%;
+    border-radius: 0;
+  }
+  .form-logo {
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin: $m auto 0 !important;
+  }
+}
+
+
+@media (max-height: 700px) {
+  .form-logo {
+    all: unset;
+    display: none;
+  }
+}

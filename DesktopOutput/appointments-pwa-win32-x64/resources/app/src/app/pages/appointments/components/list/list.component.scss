@@ -1,0 +1,96 @@
+@import "src/app/sass/breakpoints.scss";
+
+cdk-virtual-scroll-viewport {
+  height: 100%;
+}
+
+/*plain css animations trigger on render*/
+.slide-left {
+  animation: slide-left 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%) scale(0.1);
+    -webkit-transform: translateX(100%) scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    -webkit-transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.loading-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: unset !important;
+}
+
+.fab {
+  position: fixed;
+  bottom: $l;
+  right: $l;
+}
+
+@media (max-width: $small) {
+  .slide-left {
+    animation: slide-left-mobile 0.4s 
+      cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    -webkit-animation: slide-left-mobile 0.3s
+      cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+}
+
+@keyframes slide-left-mobile {
+  0% {
+    transform: translateX(500px) scale(0.1);
+    -webkit-transform: translateX(500px) scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    -webkit-transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.end-indicator{
+  height: 100px;
+  width: 100px;
+  background-color: #67edae;
+  border-radius: 50%;
+  margin: 0 auto $m;
+}
+
+.end-indicator::before{
+  content: '';
+  display: block;
+  width: 50px;
+  height: 5px;
+  background-color: #303030;
+  transform: rotate(-45deg);
+  position: relative;
+  top: 45px;
+  left: 7px;
+}
+
+.end-indicator::after{
+  content: '';
+  display: block;
+  width: 50px;
+  height: 5px;
+  background-color: #303030;
+  transform: rotate(45deg);
+  position: relative;
+  top: 40px;
+  left: 40px;
+}
+
+.end-indicator:hover {
+  background-color: #86eebe;
+}

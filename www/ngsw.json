@@ -1,0 +1,90 @@
+{
+  "configVersion": 1,
+  "timestamp": 1554294942151,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/4.e5530e5d41bce5a1eb31.js",
+        "/assets/login-bg.jpg",
+        "/favicon.ico",
+        "/firebase-messaging-sw.js",
+        "/index.html",
+        "/main.236d99731028ce61087f.js",
+        "/polyfills.7e61eeabe4f75fabb7d3.js",
+        "/runtime.2aef21a267fbbb8d5f39.js",
+        "/styles.1897422004bdae783997.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/account.png",
+        "/assets/github-logo.svg",
+        "/assets/google.svg",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/logo.svg",
+        "/assets/notification-icon.png",
+        "/assets/round-account-button-with-user-inside.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/4.e5530e5d41bce5a1eb31.js": "fedc1d6626163de14cce244f454406df3dd88710",
+    "/assets/account.png": "65b83efd2119ebfb5443fcd6d99d2ec8abddc083",
+    "/assets/github-logo.svg": "3b50a0d95f507ddd0ad1dc69cdd20f2a9f529131",
+    "/assets/google.svg": "c61f6762d15b2c325843ae8c2474341ed52fb889",
+    "/assets/icons/icon-128x128.png": "d830ee59393dbdae345d23e6d576bccde06ded92",
+    "/assets/icons/icon-144x144.png": "97569f0382e0f6bc51421e594345fffc1ce762b2",
+    "/assets/icons/icon-152x152.png": "623532e83f9da22e32ba0a2c9951a275f683e432",
+    "/assets/icons/icon-192x192.png": "5fc1ecd2a32be7a62bc1314d22a90dae50abe406",
+    "/assets/icons/icon-384x384.png": "032bf4a795de012a984ea817b039a2de8cdbb1e2",
+    "/assets/icons/icon-512x512.png": "c1bd330efe5f66337e1b7cefeef1d78ac33e4265",
+    "/assets/icons/icon-72x72.png": "2c1c8586a198f415818140566468f88aa3ab045d",
+    "/assets/icons/icon-96x96.png": "b0285bd0dba8d08cac7a4a23d448275ed65b379a",
+    "/assets/login-bg.jpg": "1901e13bbee7887af4c6a909c81b3e13e532a65b",
+    "/assets/logo.svg": "fbcc5f1e2a316c4d43d3db12f93462fe5782614a",
+    "/assets/notification-icon.png": "47118368758aa8dc0f71b3ca2d1babb004ae90c6",
+    "/assets/round-account-button-with-user-inside.svg": "3a816cb2128167ba55b61761ae2940c95ad76dae",
+    "/favicon.ico": "348d8436ddf1ecd52355788eccf5a6619fbc09f4",
+    "/firebase-messaging-sw.js": "bb1fd51b8b9da60db9bbf421683706658aea7915",
+    "/index.html": "03b73a9b95d3113ade032f0787b149372ac88f1a",
+    "/main.236d99731028ce61087f.js": "557e3836ec631a155c1bc9bdf6d8c23f23870262",
+    "/polyfills.7e61eeabe4f75fabb7d3.js": "6946e10a03311677a01490b8e91741668e64e17e",
+    "/runtime.2aef21a267fbbb8d5f39.js": "33e7f1eb44c8afa064c267229fe676afeeabe52d",
+    "/styles.1897422004bdae783997.css": "fa92446a6111f1e23a2dc96fa43640f3dcd4fce7"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

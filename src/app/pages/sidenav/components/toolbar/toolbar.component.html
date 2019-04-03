@@ -1,0 +1,32 @@
+<mat-toolbar color="primary">
+
+  <button mat-icon-button [@rotatedState]="innerToggleState" (click)="sidenavToggled()">
+    <mat-icon *ngIf="innerToggleState==='rotated'">arrow_forward</mat-icon>
+    <mat-icon *ngIf="innerToggleState==='default'">menu</mat-icon>
+  </button>
+
+  Appointments
+
+  <div class="flex-spacer" aria-label="spacer"></div>
+
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon *ngIf="!photoURL">account_circle</mat-icon>
+    <img *ngIf="photoURL" [src]="photoURL" alt="profile" height="26" class="profile-img">
+  </button>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item disableRipple="true" disabled>
+      <span class=""><strong>{{username}}</strong></span>
+    </button>
+    <button mat-menu-item (click)="logout()">
+      <span class="dropdown-item">Logout</span>
+    </button>
+    <mat-divider></mat-divider>
+    <a href="https://github.com/KaindlJulian/appointments-pwa" mat-menu-item class="git-link">
+      <img src="/assets/github-logo.svg" alt="git-logo.svg" class="git-icon " height="16">
+      <span class="dropdown-item">
+        Github
+      </span>
+    </a>
+  </mat-menu>
+</mat-toolbar>
